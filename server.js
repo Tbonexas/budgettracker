@@ -18,7 +18,7 @@ app.use(express.static("public"));
 // mongodb+srv://Tbonexas:<passwordhere>@cluster0.6ihq7.mongodb.net/<dbname>?retryWrites=true&w=majority
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/tracker',
+  process.env.MONGODB_URI || 'mongodb://localhost/budgetrack',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
