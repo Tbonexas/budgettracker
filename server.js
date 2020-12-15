@@ -15,10 +15,18 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+// mongodb+srv://Tbonexas:<passwordhere>@cluster0.6ihq7.mongodb.net/<dbname>?retryWrites=true&w=majority
+
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/tracker',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
+
 
 // routes
 app.use(require("./routes/api.js"));
