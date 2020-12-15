@@ -14,12 +14,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
+// process.env.MONGODB_URI || 'mongodb://localhost/budget',
 
-// mongodb+srv://Tbonexas:<passwordhere>@cluster0.6ihq7.mongodb.net/<dbname>?retryWrites=true&w=majority
 
-mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/budgetrack',
-  {
+mongoose.connect("mongodb+srv://Tbonexas:<passwordhere>@cluster0.6ihq7.mongodb.net/<dbname>?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
