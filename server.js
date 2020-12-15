@@ -17,7 +17,7 @@ app.use(express.static("public"));
 // process.env.MONGODB_URI || 'mongodb://localhost/budget',
 
 
-mongoose.connect("mongodb+srv://admin:password1234@cluster0.6ihq7.mongodb.net/<dbname>?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://admin:password1234@cluster0.6ihq7.mongodb.net/budgetrack?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
