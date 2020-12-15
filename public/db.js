@@ -4,9 +4,9 @@ const { get } = require("../routes/api");
 
 let db; 
 
-// creates a new request for a "BT" db // 
+// creates a new request for a "budget" db // 
 
-const request = indexedDB.open("BT", 1);
+const request = indexedDB.open("budget", 1);
 
 request.onupgradeneeded = function (event) {
     // object store pending //

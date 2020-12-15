@@ -1,7 +1,7 @@
 {
-  "name": "budget-app",
+  "name": "online-offline-budget",
   "version": "1.0.0",
-  "description": "",
+  "description": "Online and offline budget tracker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,19 +10,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
+    "url": "git+https://github.com/Tbonexas/budgettracker"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Todd Wayment",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coding-boot-camp/unit18hw/issues"
+    "url": "https://github.com/Tbonexas"
   },
-  "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
+  "homepage": "https://github.com/Tbonexas/budgettracker",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "lite-server": "^2.5.3",
     "mongoose": "^5.5.15",
     "morgan": "^1.9.1"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [
+    "Budget",
+    "tracker",
+    "homework",
+    "mongoose",
+    "express"
+  ]
 }
