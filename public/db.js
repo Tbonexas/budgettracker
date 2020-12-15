@@ -1,6 +1,4 @@
-// to store data while offline // 
-
-const { get } = require("../routes/api");
+// to store data while offline //
 
 let db; 
 
